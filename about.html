@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - ABC FITNESS</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #fbd6ce;
+        padding: 10px 20px;
+      }
+
+      header .logo {
+        color: #013c4a;
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 1.5em;
+      }
+
+      header .title {
+        color: #013c4a;
+        font-size: 1.8em;
+      }
+
+      header nav {
+        display: flex;
+        gap: 15px;
+      }
+
+      header nav a {
+        color: #013c4a;
+        text-decoration: none;
+        font-size: 1em;
+        padding: 5px 10px;
+      }
+
+      header nav a:hover {
+        background-color: #49b8a5;
+        color: #fff;
+        border-radius: 5px;
+      }
+
+      footer {
+        background-color: #fbd6ce;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      footer .subscribe {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 20px;
+      }
+
+      footer .subscribe input {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      footer .subscribe button {
+        background-color: #49b8a5;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      footer .subscribe button:hover {
+        background-color: #013c4a;
+      }
+
+      footer .social-links {
+        margin-bottom: 20px;
+      }
+
+      footer nav {
+        display: flex;
+        gap: 15px;
+      }
+
+      footer nav a {
+        color: #013c4a;
+        text-decoration: none;
+      }
+
+      footer nav a:hover {
+        text-decoration: underline;
+      }
+
+      .content {
+        padding: 20px;
+      }
+
+      .section {
+        margin-bottom: 40px;
+      }
+
+      .business-hours {
+        width: 100%;
+        border: 1px solid #ccc;
+        border-collapse: collapse;
+        margin: 20px 0;
+      }
+
+      .business-hours th,
+      .business-hours td {
+        border: 1px solid #ccc;
+        text-align: center;
+        padding: 10px;
+      }
+
+      .contact-form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        max-width: 600px;
+        margin: auto;
+      }
+
+      .contact-form input,
+      .contact-form textarea {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      .contact-form button {
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .contact-form .submit {
+        background-color: #49b8a5;
+        color: white;
+        border: none;
+      }
+
+      .contact-form .submit:hover {
+        background-color: #013c4a;
+      }
+
+      .contact-form .clear {
+        background-color: #777777;
+        color: white;
+        border: none;
+      }
+
+      .contact-form .clear:hover {
+        background-color: #555555;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="logo"
+        ><img src="images/Logo.png" width="100"
+      /></a>
+      <div class="title">About Us</div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="Gallery.html">Gallery</a>
+        <a href="about.html">About Us</a>
+        <a href="community.html">Community</a>
+      </nav>
+    </header>
+
+    <div class="content">
+      <section class="section">
+        <h2>About ABC FITNESS</h2>
+        <p>
+          Welcome to ABC FITNESS, your one-stop solution for quality fitness
+          products and personalized support. We're here to support your fitness
+          journey every step of the way!
+        </p>
+        <h3>Business Hours</h3>
+        <table class="business-hours">
+          <tr>
+            <th>Day</th>
+            <th>Opening Time</th>
+            <th>Closing Time</th>
+          </tr>
+          <tr>
+            <td>Monday - Friday</td>
+            <td>9:00 AM</td>
+            <td>8:00 PM</td>
+          </tr>
+          <tr>
+            <td>Saturday</td>
+            <td>10:00 AM</td>
+            <td>6:00 PM</td>
+          </tr>
+          <tr>
+            <td>Sunday</td>
+            <td>Closed</td>
+            <td>Closed</td>
+          </tr>
+        </table>
+      </section>
+
+      <section class="section">
+        <h2>Contact Us</h2>
+        <form class="contact-form">
+          <input type="text" id="name" placeholder="Your Name" required />
+          <input type="email" id="email" placeholder="Your Email" required />
+          <input
+            type="text"
+            id="phone"
+            placeholder="Your Phone Number"
+            required
+          />
+          <textarea
+            id="feedback"
+            rows="5"
+            placeholder="Your Feedback or Custom Order Information"
+            required
+          ></textarea>
+          <label>
+            <input type="checkbox" id="custom-order" /> Custom Order
+          </label>
+          <button type="button" class="submit" onclick="submitForm()">
+            Submit
+          </button>
+          <button type="button" class="clear" onclick="clearForm()">
+            Clear Form
+          </button>
+        </form>
+      </section>
+    </div>
+
+    <footer>
+      <div class="subscribe">
+        <input type="email" placeholder="Enter your email" />
+        <button onclick="subscribe()">Subscribe</button>
+      </div>
+      <div class="social-links">
+        <a href="https://www.facebook.com" target="_blank"
+          ><img src="images/facebook.png"
+        /></a>
+        <a href="https://www.twitter.com" target="_blank"
+          ><img src="images/twitter.png"
+        /></a>
+        <a href="https://www.instagram.com" target="_blank"
+          ><img src="images/instagram.png"
+        /></a>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="Gallery.html">Gallery</a>
+        <a href="about.html">About Us</a>
+        <a href="community.html">Community Corner</a>
+      </nav>
+    </footer>
+
+    <script>
+      function subscribe() {
+        alert('Thank you for subscribing');
+      }
+
+      function submitForm() {
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const phone = document.getElementById('phone').value;
+        const feedback = document.getElementById('feedback').value;
+        const customOrder = document.getElementById('custom-order').checked;
+
+        if (name && email && phone && feedback) {
+          const formData = {
+            name,
+            email,
+            phone,
+            feedback,
+            customOrder,
+          };
+
+          localStorage.setItem('contactForm', JSON.stringify(formData));
+          alert(`Thank you for your message, ${name}`);
+        } else {
+          alert('Please fill in all required fields.');
+        }
+      }
+
+      function clearForm() {
+        document.getElementById('name').value = '';
+        document.getElementById('email').value = '';
+        document.getElementById('phone').value = '';
+        document.getElementById('feedback').value = '';
+        document.getElementById('custom-order').checked = false;
+      }
+    </script>
+  </body>
+</html>

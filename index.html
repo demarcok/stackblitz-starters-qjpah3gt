@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ABC FITNESS</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #fbd6ce;
+        padding: 10px 20px;
+      }
+
+      header .logo {
+        color: #013c4a;
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 1.5em;
+      }
+
+      header .title {
+        color: #013c4a;
+        font-size: 1.8em;
+      }
+
+      header nav {
+        display: flex;
+        gap: 15px;
+      }
+
+      header nav a {
+        color: #013c4a;
+        text-decoration: none;
+        font-size: 1em;
+        padding: 5px 10px;
+      }
+
+      header nav a:hover {
+        background-color: #49b8a5;
+        color: #fff;
+        border-radius: 5px;
+      }
+
+      footer {
+        background-color: #fbd6ce;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      footer .subscribe {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 20px;
+      }
+
+      footer .subscribe input {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      footer .subscribe button {
+        background-color: #49b8a5;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      footer .subscribe button:hover {
+        background-color: #013c4a;
+      }
+
+      footer .social-links {
+        margin-bottom: 20px;
+      }
+
+      footer nav {
+        display: flex;
+        gap: 15px;
+      }
+
+      footer nav a {
+        color: #013c4a;
+        text-decoration: none;
+      }
+
+      footer nav a:hover {
+        text-decoration: underline;
+      }
+
+      .content {
+        padding: 20px;
+        text-align: center;
+      }
+
+      .section {
+        margin-bottom: 40px;
+      }
+
+      .promo-section {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .promo-box {
+        width: 30%;
+        background-color: #013c4a;
+        color: white;
+        padding: 20px;
+        border-radius: 10px;
+      }
+
+      .images-section {
+        display: flex;
+        gap: 20px;
+      }
+
+      .images-section img {
+        width: 48%;
+        border-radius: 10px;
+      }
+
+      .shopping-perks {
+        background-color: #e7a827;
+        padding: 20px;
+        border-radius: 10px;
+      }
+
+      .categories {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 10px;
+        width: 60%;
+        margin: auto;
+      }
+
+      .categories > div {
+        background-color: #e7a827;
+        text-align: center;
+        padding: 20px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="logo"
+        ><img src="images/Logo.png" width="100"
+      /></a>
+      <div class="title">Welcome to ABC FITNESS</div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="Gallery.html">Gallery</a>
+        <a href="about.html">About Us</a>
+        <a href="community.html">Community</a>
+      </nav>
+    </header>
+
+    <div class="content">
+      <section class="section overview">
+        <h2>About ABC FITNESS</h2>
+        <p>
+          ABC FITNESS is dedicated to bringing you top-quality fitness products
+          and services. We focus on empowering your fitness journey with
+          creativity, innovation, and community engagement.
+        </p>
+      </section>
+
+      <section class="section promo-section">
+        <div class="promo-box">
+          <h3>Promo 1</h3>
+          <p>Get fit with our 20% off on gym memberships!</p>
+        </div>
+        <div class="promo-box">
+          <h3>Promo 2</h3>
+          <p>Buy any package, get a free water bottle!</p>
+        </div>
+        <div class="promo-box">
+          <h3>Promo 3</h3>
+          <p>Free shipping on orders over $50!</p>
+        </div>
+      </section>
+
+      <section class="section images-section">
+        <img src="images/Item1.PNG" alt="Product 1" />
+        <img src="images/Item2.PNG" alt="Product 2" />
+      </section>
+
+      <section class="section shopping-perks">
+        <h2>Shopping Perks</h2>
+        <p>
+          Enjoy exclusive discounts, fast shipping, and top-notch customer
+          service when shopping with ABC FITNESS!
+        </p>
+      </section>
+      <h2>Categories</h2>
+      <section class="section categories">
+        <div class="cat1">Equipment</div>
+        <div class="cat2">Apparel</div>
+        <div class="cat3">Supplements</div>
+        <div class="cat4">Accessories</div>
+        <div class="cat5">Gadgets</div>
+        <div class="cat6">Outdoor</div>
+      </section>
+    </div>
+
+    <footer>
+      <div class="subscribe">
+        <input type="email" placeholder="Enter your email" />
+        <button onclick="subscribe()">Subscribe</button>
+      </div>
+      <div class="social-links">
+        <a href="https://www.facebook.com" target="_blank"
+          ><img src="images/facebook.png"
+        /></a>
+        <a href="https://www.twitter.com" target="_blank"
+          ><img src="images/twitter.png"
+        /></a>
+        <a href="https://www.instagram.com" target="_blank"
+          ><img src="images/instagram.png"
+        /></a>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="Gallery.html">Gallery</a>
+        <a href="about.html">About Us</a>
+        <a href="community.html">Community Corner</a>
+      </nav>
+    </footer>
+
+    <script>
+      function subscribe() {
+        alert('Thank you for subscribing');
+      }
+    </script>
+  </body>
+</html>
